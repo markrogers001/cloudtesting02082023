@@ -1,4 +1,4 @@
-package com.qaa.module3.unit_testing_exercises.exercise2;
+package main.java.com.qaa.module3.unit_testing_exercises.exercise2;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -55,7 +55,7 @@ public class UserService {
 		// username and password must not be empty
 		if (trimmedUsername.isEmpty() || trimmedPassword.isEmpty()) throw new IllegalArgumentException("Username and password must not be empty");
 		
-		String savedPassword = users.get(trimmedPassword);
+		String savedPassword = users.get(trimmedUsername);
 		if (savedPassword == null) throw new RuntimeException("Invalid username supplied");
 		
 		if (!trimmedPassword.equals(savedPassword)) throw new IllegalArgumentException("Invalid password supplied");

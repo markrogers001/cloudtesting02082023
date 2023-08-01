@@ -1,4 +1,4 @@
-package com.qaa.module3.unit_testing_exercises.exercise3;
+package main.java.com.qaa.module3.unit_testing_exercises.exercise3;
 
 public interface UserRepository {
 
